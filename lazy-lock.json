@@ -1,0 +1,6 @@
+{
+  "lazy.nvim": { "branch": "main", "commit": "077102c5bfc578693f12377846d427f49bc50076" },
+  "nerdicons.nvim": { "branch": "main", "commit": "6dfb8abaf278f6075605902f5e79b8fef9403b3b" },
+  "plenary.nvim": { "branch": "master", "commit": "a3e3bc82a3f95c5ed0d7201546d5d2c19b20d683" },
+  "telescope.nvim": { "branch": "master", "commit": "3b1600d0fd5172ad9fae00987362ca0ef3d8895d" }
+}

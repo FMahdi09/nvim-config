@@ -25,7 +25,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-	-- telescopt
+	-- telescope
 	"nvim-telescope/telescope.nvim", tag = "0.1.8",
 	dependencies = { "nvim-lua/plenary.nvim" },
 	-- icons

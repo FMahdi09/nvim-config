@@ -5,6 +5,7 @@ vim.cmd("set tabstop=4")
 vim.cmd("set shiftwidth=4")
 vim.cmd("set smarttab")
 vim.cmd("set softtabstop=4")
+vim.g.mapleader = " "
 
 -- custom key maps
 vim.cmd("inoremap jk <Esc>")
@@ -28,8 +29,8 @@ local plugins = {
 	-- telescope
 	"nvim-telescope/telescope.nvim", tag = "0.1.8",
 	dependencies = { "nvim-lua/plenary.nvim" },
-	-- icons
-	"glepnir/nerdicons.nvim"
+	-- treesitter
+	{{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}}
 }
 local opts = {}
 require("lazy").setup(plugins, opts)
@@ -40,3 +41,11 @@ vim.keymap.set("n", "<leader>f", builtin.find_files, {})
 vim.keymap.set("n", "<leader>c", builtin.git_bcommits, {})
 vim.keymap.set("n", "<leader>b", builtin.git_branches, {})
 vim.keymap.set("n", "<leader>g", builtin.live_grep, {})
+
+-- treesitter config
+local config = require("nvim-treesitter.configs")
+config.setup({
+	ensure_installed = {"javascript", "lua", "typescript"},
+	highlight = {enabled = true},
+	indent = {enabled = true},
+})

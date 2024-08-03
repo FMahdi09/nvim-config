@@ -30,7 +30,17 @@ local plugins = {
 	"nvim-telescope/telescope.nvim", tag = "0.1.8",
 	dependencies = { "nvim-lua/plenary.nvim" },
 	-- treesitter
-	{{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}}
+	{{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}},
+	-- neo-tree
+	{
+	    "nvim-neo-tree/neo-tree.nvim",
+	    branch = "v3.x",
+	    dependencies = {
+	      "nvim-lua/plenary.nvim",
+	      "nvim-tree/nvim-web-devicons",
+	      "MunifTanjim/nui.nvim",
+	    }
+	}
 }
 local opts = {}
 require("lazy").setup(plugins, opts)
@@ -49,3 +59,6 @@ config.setup({
 	highlight = {enabled = true},
 	indent = {enabled = true},
 })
+
+-- neo-tree keymaps
+vim.keymap.set("n", "<C-n>", ":Neotree filesystem toggle left<CR>", {})

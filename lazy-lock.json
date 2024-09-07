@@ -1,5 +1,5 @@
 {
-  "R.nvim": { "branch": "main", "commit": "-1acf1fc99a504cf45f3b91dd9ec9394ec73f33fe" },
+  "R.nvim": { "branch": "main", "commit": "0acf1fc99a504cf45f3b91dd9ec9394ec73f33fe" },
   "cmp-r": { "branch": "main", "commit": "18b88eeb7e47996623b9aa0a763677ac00a16221" },
   "lazy.nvim": { "branch": "main", "commit": "48b52b5cfcf8f88ed0aff8fde573a5cc20b1306d" },
   "lualine.nvim": { "branch": "master", "commit": "b431d228b7bbcdaea818bdc3e25b8cdbe861f056" },

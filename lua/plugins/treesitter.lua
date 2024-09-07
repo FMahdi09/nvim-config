@@ -14,6 +14,7 @@ return {
 				"rnoweb",
 				"yaml",
 			},
+			auto_install = true,
 			highlight = {
 				enabled = true,
 			},

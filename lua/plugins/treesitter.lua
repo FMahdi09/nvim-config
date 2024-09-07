@@ -8,6 +8,11 @@ return {
 				"lua",
 				"javascript",
 				"typescript",
+				"markdown",
+				"markdown_inline",
+				"r",
+				"rnoweb",
+				"yaml",
 			},
 			highlight = {
 				enabled = true,

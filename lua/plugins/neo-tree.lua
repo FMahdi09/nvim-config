@@ -6,6 +6,14 @@ return {
 		"nvim-tree/nvim-web-devicons",
 		"MunifTanjim/nui.nvim",
 	},
+	opts = {
+		filesystem = {
+			filtered_items = {
+				visible = true,
+				hide_dotfiles = false,
+			},
+		},
+	},
 	config = function()
 		vim.keymap.set("n", "<C-n>", ":Neotree filesystem toggle left<CR>", {})
 	end,

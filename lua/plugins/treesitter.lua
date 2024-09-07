@@ -13,8 +13,8 @@ return {
 				"r",
 				"rnoweb",
 				"yaml",
+				"python",
 			},
-			auto_install = true,
 			highlight = {
 				enabled = true,
 			},

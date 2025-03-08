@@ -6,17 +6,14 @@ return {
 		config.setup({
 			ensure_installed = {
 				"lua",
-				"javascript",
-				"typescript",
 				"markdown",
 				"markdown_inline",
-				"r",
-				"rnoweb",
 				"yaml",
 				"python",
 			},
 			highlight = {
 				enabled = true,
+				additional_vim_regex_highlighting = false,
 			},
 			indent = {
 				enabled = true,

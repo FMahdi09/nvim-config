@@ -7,3 +7,7 @@ vim.cmd("set smarttab")
 vim.cmd("set softtabstop=4")
 vim.cmd("set mouse=")
 vim.g.mapleader = " "
+vim.diagnostic.config({
+  virtual_text = false,
+  signs = false
+})

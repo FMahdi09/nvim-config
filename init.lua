@@ -15,3 +15,8 @@ vim.opt.rtp:prepend(lazypath)
 require("vim-keymaps")
 require("vim-options")
 require("lazy").setup("plugins")
+
+-- terminal
+
+vim.keymap.set("n", "<leader>t", "<cmd>tab term<cr>")
+vim.keymap.set("n", "<leader>ü", "<cmd>bd!<cr>")
